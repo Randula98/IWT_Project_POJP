@@ -16,3 +16,42 @@
     color: #1f252e;
     /*background-color: #e7eaef;*/
 }
+
+#jobcontainer1 {
+    width: 100%;
+    height: 400px;
+    background-color: #1f252e;
+}
+
+#jobcontainer2 {
+    width: 100%;
+    height: 300px;
+    background-color: #292f3a;
+}
+
+#jobcontainer3 {
+    width: 100%;
+    height: 300px;
+    background-color: #363c49;
+}
+
+#titlecontainer2 {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+
+#titlecontainer2 h1 {
+    padding-top: 25px;
+    font-size: 35px;
+    font-family: 'Comfortaa', cursive;
+    color: #1f252e;
+    /*background-color: #e7eaef;*/
+}
+
+#jobcontainer4 {
+    width: 100%;
+    height: 400px;
+    background-color: #1f252e;
+    margin-bottom: 50px;
+}
