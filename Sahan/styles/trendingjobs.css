@@ -1,5 +1,5 @@
 body {
-  background-color: #c4cbd7;
+  /*background-color: #c4cbd7;*/
 }
 
 #headercontainer {
@@ -42,6 +42,7 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 10px;
 }
 
 #jpreview #info {
@@ -87,14 +88,17 @@ body {
 #jselector {
   width: 335px;
   height: 400px;
-  background-color: rgb(53, 62, 78);
+  /*background-color: rgb(53, 62, 78);*/
 }
 
 #selector1 {
   width: 100%;
-  height: 200px;
+  height: 190px;
   background-color: rgb(0, 0, 0);
   overflow: hidden;
+  border-radius: 10px;
+  margin-top: 6px;
+  margin-bottom: 8px;
 }
 
 #selector1 img{
@@ -114,9 +118,10 @@ body {
 
 #selector2 {
   width: 100%;
-  height: 200px;
+  height: 190px;
   background-color: rgb(0, 0, 0);
   overflow: hidden;
+  border-radius: 10px;
 }
 
 #selector2 img{
