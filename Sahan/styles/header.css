@@ -154,4 +154,6 @@
     border-bottom: 3px solid #cfd5df;
   }
   
-  
+  ::-webkit-scrollbar{
+    display: none;
+  }
