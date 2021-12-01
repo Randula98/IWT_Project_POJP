@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
+
+.companyProfileBody{
+    width: 100%;
+    height: 570px;
+    background-size: cover;
+}
+
+/* .companyLogo{
+    position: absolute;
+    top: 150px;
+} */
+.companyLogo img{
+    margin: 20px 5px 5px 20px;
+    width: 200px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 64);
+
+}
+
+.compName{
+    position: absolute;
+    top: 150px;
+    left: 250px;
+}
+
+.compName h1{
+    font-size: 50px;
+    margin: 20px auto;
+    font-family: 'Noto Serif', serif;
+}
+.compborder {
+    width: 200px;
+    height: 6px;
+    background: #0b004d;
+    margin: 20px auto;
+}
+
+.compDes{
+
+    display: block;
+    width: 400px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 64);
+    transition: 00.5s;
+}
+
+.contactDetails{
+
+    display: flex;
+    border-radius: 20px;
+    padding: 20px;
+    position: absolute;
+    top: 285px;
+    left: 500px;
+    
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 64);
+
+
+}
+
+.contactDetails img{
+    margin-left: 20px;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+}
+
+.contactDetails > div{
+    margin: 10px 50px;
+    transition: 0.5s;
+}
+
+.contactDetails h3{
+    text-align: center;
+}
+
+.compLocation{
+
+    display: block;
+    position: absolute;
+    top: 470px;
+    left: 500px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 64);
+    transition: 00.5s;
+}
+
+.compDet:hover{
+    transform: scale(1.08);
+}
+
+.compLocation:hover{
+    transform: scale(1.08);
+}
+
+.compDes:hover{
+    transform: scale(1.03);
+
+}
+
+.compTextArea{
+    display: block;
+    width: 400px;
+    height: 200px;
+    background-color: transparent;
+    position: absolute;
+    top: 470px;
+    left: 820px;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    box-shadow: 0px 8px 22px -12px rgba(0, 0, 0, 64);
+}
+
+.compTextArea textarea{
+    width: 100%;
+    padding: 5px;
+    border-radius: 15px;
+    border: none;
+    transition: 0.8s;
+    background-color: rgba(245, 245, 245, 0.616);
+}
+
+.compTextArea input{
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    color: whitesmoke;
+    background-color: rgba(15, 1, 207, 0.445);
+    transition: 0.8s;
+}
+
+.compTextArea input:hover{
+    transform: scale(1.08);
+    background-color: rgba(15, 1, 207, 0.781); ;
+}
+.compTextArea textarea:hover{
+    transform: scale(1.03);
+}
+
+.compTextArea:hover{
+    transform: scale(1.03);
+}
+
+.compbackbtn{
+   width: 80px;
+   height: 35px;
+   background-color: rgba(0, 0, 0, 0.555);
+   margin-left: 10px;
+   margin-top: 30px;
+   border-radius: 20px;
+}
+
+.compBackbtnA{
+    font-size: 15px;
+    position: relative;
+    top: 8px;
+    left: 20px;
+    color: white;
+    
+}
+
+.compbackbtn:hover{
+    transform: scale(1.03);
+}
+
+
