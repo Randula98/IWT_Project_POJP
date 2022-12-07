@@ -8,6 +8,13 @@
   <title>Payrow</title>
   <link rel="thumbnail" type="ico" href="images/thumbnail.ico">
   <link rel="stylesheet" href="styles/styles.css">
+  
+  <link rel="stylesheet" href="styles/abishek_styles/contactus.css">
+  <link rel="stylesheet" href="styles/abishek_styles/fulltimejobs.css">
+  <link rel="stylesheet" href="styles/abishek_styles/trendingjobs.css">
+  <script src="js/abishek_js/trendingjobs.js"></script>
+
+  <script src="js/abishek_js/fulltimejobs.js"></script>
   <script src="js/myScript.js"></script>
 </head>
 <!--\
@@ -45,9 +52,9 @@
       </div>
 
       <div id="navbar2">
-        <a href="#">Trending Jobs</a>
+        <a href="trendingjobs.php">Trending Jobs</a>
         <a href="#">Part Time</a>
-        <a href="#">Full Time</a>
+        <a href="fulltimejobs.php">Full Time</a>
         <a href="#">Local Jobs</a>
         <a href="#">Foreign Jobs</a>
         <a href="#">Online Jobs</a>
