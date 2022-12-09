@@ -1,0 +1,67 @@
+#section1 {
+    width: 100%;
+    height: 100vh;
+}
+
+#headercontainer {
+    width: 100%;
+    height: 125px;
+}
+
+#titlecontainer1 {
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+
+#titlecontainer1 h1 {
+    padding-top: 25px;
+    font-size: 35px;
+    font-family: 'Comfortaa', cursive;
+    color: #1f252e;
+    /*background-color: #e7eaef;*/
+}
+
+#slider {
+    width: 100%;
+    height: 400px;
+    background-color: #1f252e;
+}
+
+#section2 {
+    width: 100%;
+    height: 80vh;
+}
+
+#jobcontainer {
+    width: 100%;
+    height: 500px;
+    /*background-color: #475369;*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#job1 {
+    width: 30%;
+    height: 500px;
+    background-color: #1f252e;
+}
+
+#job2 {
+    width: 30%;
+    height: 500px;
+    background-color: #272d36;
+}
+
+#job3 {
+    width: 30%;
+    height: 500px;
+    background-color: #2f3641;
+}
+
+#jobbanner {
+    width: 100%;
+    height: 350px;
+    background-color: #2f3641;
+    margin-bottom: 50px;
+}

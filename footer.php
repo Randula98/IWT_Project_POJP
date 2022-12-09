@@ -71,7 +71,18 @@
             <li><a href=""><img src="images/socialmedia/linkedin.png"></a></li>
           </ul>
         </div>
+        <?php
+          if(isset($_SESSION['id']))
+          {
+            
+          }
+          else{
+            echo '<a href="adminlogin.php">Admin login</a>';
+          }
+          
+        ?>
       </div>
+      
     </footer>
   </div>
 </body>
