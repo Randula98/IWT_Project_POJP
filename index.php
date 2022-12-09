@@ -1,20 +1,18 @@
 <?php 
-include 'header.php';
+include 'header_main.php';
 ?>
 
-  <div id="section2">
+<div id="section2">
     <div id="sec2Container">
       <h2>Explore by Category</h2>
       <ul>
-        <a href="#"><li><img id="caticon" src="images/logoi.png"><p>Design & Multimedia</p></li></a>
-        <a href="#"><li><img id="caticon" src="images/logoi.png"><p>Education Training</p></li></a>
-        <a href="#"><li><img id="caticon" src="images/logoi.png"><p>Accounting/ Finance</p></li></a>
-        <a href="#"><li><img id="caticon" src="images/logoi.png"><p>Human Resource</p></li></a>
-        <a href="#"><li><img id="caticon" src="images/logoi.png"><p>Telecommunication</p></li></a>
-        <a href="#"><li><img id="caticon" src="images/logoi.png"><p>Food</p></li></a>
-        <a href="#"><li><img id="caticon" src="images/logoi.png"><p>Construction/ Facilities</p></li></a>
-        <a href="#"><li><img id="caticon" src="images/logoi.png"><p>Health Care</p></li></a>
-      </ul>
+        <a href="trendingjobs.php"><li><img id="caticon" src="images/c1.png"><p>Trending Jobs</p></li></a>
+        <a href="parttimejobs.php"><li><img id="caticon" src="images/c2.png"><p>Part Time</p></li></a>
+        <a href="fulltimejobs.php"><li><img id="caticon" src="images/c3.png"><p>Full Time</p></li></a>
+        <a href="localjobs.php"><li><img id="caticon" src="images/c4.png"><p>Local Jobs</p></li></a>
+        <a href="foreignjobs.php"><li><img id="caticon" src="images/c5.png"><p>Foreign Jobs</p></li></a>
+        <a href="onlinejobs.php"><li><img id="caticon" src="images/c6.png"><p>Online Jobs</p></li></a>
+        </ul>
     </div>
 
 
@@ -28,8 +26,17 @@ include 'header.php';
       <div id="sec3p2">
         <p>Your resume in minutes with Payrow resume assistant is ready</p>
       </div>
-  
-      <button type="button" id="resumebttn" onclick="">Create an Account</button>
+
+        <?php
+          if(isset($_SESSION['id']))
+          {
+
+          }
+          else{
+            echo '<a href="sign.php"><button type="button" id="resumebttn" onclick="">Create an Account</button></a>';
+          }
+        ?>
+      
     </div>
   </div>
 
@@ -44,11 +51,30 @@ include 'header.php';
       <div id="sec4para">Capitalize on low hanging friut to identify a ballpark value added activity to beta test. 
         Override the digital divide with additional clickthroughs from DevOps.
       </div>
+        <!---->
+        <?php
+          if(isset($_SESSION['id']))
+          {
+            if($_SESSION['role'] === 'emp')
+            {
+              echo '<a href="postajob1.php"><button type="button" id="postbttn" onclick="">Post a Job</button></a>';
+            }
+            else if (($_SESSION['role'] === 'admin') || ($_SESSION['role'] === 'js')){}
+            else
+            {
+              echo '<a href="destroy.php"><button type="button" id="postbttn" onclick="">Post a Job</button></a>';
+            }
+          }
+          else{
+              echo '<a href="cmlogin.php"><button type="button" id="postbttn" onclick="">Post a Job</button></a>';
+          }
+        ?>
+      
 
-      <button type="button" id="postbttn" onclick="">Post a Job</button>
+      <!---->
     </div>
   </div>
-
+<!--
   <div id="section5">
     <h2>Get hired in top Companies</h2>
     <div id="companylogos">
@@ -60,7 +86,7 @@ include 'header.php';
       <a href="#" title="Adidas"><img src="images/comanylogos/adidas.png"></a>
       <a href="#" title="Netflix"><img src="images/comanylogos/netflix.png"></a>
     </div>
-  </div>
+  </div>-->
 
   <?php
     include 'footer.php'
