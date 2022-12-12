@@ -1,0 +1,255 @@
+body {
+  /*background-color: #c4cbd7;*/
+}
+
+#headercontainer {
+  width: 100%;
+  height: 125px;
+}
+
+#titlecontainer1 {
+  width: 100%;
+  height: 90px;
+  text-align: center;
+}
+
+#titlecontainer1 h1 {
+  padding-top: 25px;
+  font-size: 35px;
+  font-family: 'Comfortaa', cursive;
+  color: #1f252e;
+  /*background-color: #e7eaef;*/
+}
+
+#jobcontainer {
+  width: 100%;
+  height: 400px;
+  /*background-color: #1f252e;*/
+  display: flex;
+}
+
+#jpreview {
+  width: 75%;
+  /*height: 400px;background-color: rgb(70, 84, 109);*/
+  display: flex;
+  transition: all 5s;
+}
+
+#jpreview img {
+  width: 1019px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+#jpreview #info {
+  width: 550px;
+  height: 140px;
+  position: absolute;
+  color:#e7eaef;
+  margin-top: 130px;
+  margin-left: 60px;
+}
+
+#jpreview #info h3{
+  font-size: 35px;
+  padding-bottom: 20px;
+}
+
+#jpreview #info p{
+  padding-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#jprebttn {
+  padding: 8px 16px;
+  background: rgba(157, 167, 185, 0);
+  border: 1px solid #e7eaef;
+  color: #e7eaef;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px 50px;
+  transition: 0.2s;
+}
+
+#jprebttn:hover {
+  background-color: #acb6c7;
+  color: #2f3746;
+  transition: 0.2s ease-in-out;
+}
+
+
+#jselector {
+  width: 335px;
+  height: 400px;
+  /*background-color: rgb(53, 62, 78);*/
+}
+
+#selector1 {
+  width: 100%;
+  height: 192px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#selector1 img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+  opacity: 0.5;
+}
+
+#selector1 img:hover{
+  transform: scale(1.03);
+  transition: 0.3s all;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#selector2 {
+  width: 100%;
+  height: 192px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#selector2 img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: 0.3s ease-in-out;
+  opacity: 0.5;
+}
+
+#selector2 img:hover{
+  transform: scale(1.03);
+  transition: 0.3s all;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#titlecontainer2 {
+  width: 100%;
+  height: 90px;
+  text-align: center;
+}
+
+#titlecontainer2 h1 {
+  padding-top: 25px;
+  font-size: 35px;
+  font-family: 'Comfortaa', cursive;
+  color: #1f252e;
+  /*background-color: #e7eaef;*/
+}
+
+#demandjobcontainer {
+  width: 100%;
+  height: 600px;
+}
+
+#row {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+#cell {
+  width: 335px;
+  height: 270px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  /*box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);*/
+  transition: 0.3s ease-in-out;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#cell:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(23, 27, 35, 0.3), rgba(23, 27, 35, 0.9));
+  z-index: 2;
+  transition: 0.3s all;
+  opacity: 0;
+}
+
+#cell:hover:before {
+  opacity: 1;
+}
+
+#cell img {
+  width: 335px;
+  height: 270px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+#cell:hover img {
+  transform: scale(1.03);
+  transition: 0.5s ease-in-out;
+}
+
+#cell #info {
+  width: 100%;
+  z-index: 3;
+  color: #e7eaef;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+#cell:hover #info {
+  opacity: 1;
+  transform: translateY(-60px);
+}
+
+#cell #info h3 {
+  margin: 0;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  font-family: 'Comfortaa', cursive;
+}
+
+#cell #info #rmbttn {
+  padding: 8px 16px;
+  background: rgba(137, 151, 176, 0);
+  border: 1px solid #e7eaef;
+  color: #e7eaef;
+  font-family: 'Comfortaa', cursive;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 50px 50px;
+  transition: 0.2s;
+}
+
+#cell #info #rmbttn:hover {
+  background-color: #acb6c7;
+  color: #2f3746;
+  transition: 0.2s ease-in-out;
+}
+
+

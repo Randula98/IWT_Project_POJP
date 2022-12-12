@@ -1,0 +1,19 @@
+.widebox{
+    margin-top: 20px;
+    width:650px;
+    height: 150px;
+    border-radius: 20px;
+}
+.widebox h3{
+    padding:10px;
+}
+.edudetails{
+    margin-top: 30px;
+    margin-left: 120px;
+}
+.edudetails input{
+    margin-top:10px;
+}
+table{
+    text-align: center;
+}
